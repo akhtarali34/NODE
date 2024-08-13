@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home EJS</title>
+</head>
+<body>
+    <%- include('common/header')%>
+    <h1>HOME EJS FILE</h1>
+    <h3>Welcome <%= Akhtar.name %></h3>
+    <ul>
+        <% Akhtar.skils.forEach((item) => { %>
+            <li><%= item %></li> 
+        <% }) %>
+    </ul>
+</body>
+</html>
